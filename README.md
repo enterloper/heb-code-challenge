@@ -26,8 +26,7 @@ These tasks were completed. However, I felt there was much to be desired before 
 The tasks that I will implement next will be the following:
 1. Implement testing through jest
 2. Add statistics that will show the lowest and highest prices as well as the best rating
-3. Make the rating more UI friendly (stars/half-stars)
-4. Add links to the amazon products
-5. Make UI mobile friendly
+3. Add links to the amazon products
+4. Make UI mobile friendly
 
 ![HEB CODE CHALLENGE PREVIEW](./public/heb-preview.png)
