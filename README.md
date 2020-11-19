@@ -2,6 +2,8 @@
 
 The following was a coding challenge I was tasked with for a software developer position at HEB. 
 
+A similar version of this code can be found on [StackBlitz](https://stackblitz.com/edit/heb-code-challenge?file=src/App.js).
+
 The task was to develop a UI that would perform the following:
 1. Interface with a pre-existing API and fetch a collection of books
 2. Filter out any books that were not between $5 and $20
