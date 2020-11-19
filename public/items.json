@@ -1,0 +1,108 @@
+ 
+[
+  {
+    "product_id": 29432,
+    "rating": 5,
+    "amzn_price": 29.7,
+    "amzn_url": "https://www.amazon.com/Mary-Square-Inspirational-Spiral-Lancaster/dp/B08BF6KLTN",
+    "title": "2021 She Holds on to Hope For He is Forever Faithful 18-Month Planner"
+  },
+  { 
+    "product_id": 29425,
+    "rating": 4.4,
+    "amzn_price": 9.76,
+    "amzn_url": "https://www.amazon.com/DaySpring-Peanuts-Encouragement-Notes-82296/dp/B007MEXAYK",
+    "title": "Peanuts Affirmation Notes, Package of 32"
+  },
+  {
+    "product_id": 29392,
+    "rating": 4.8,
+    "amzn_price": 13.11,
+    "amzn_url": "https://www.amazon.com/Skill-Sharpeners-Spell-Write-Grade/dp/1596730455",
+    "title": "Spell & Write, Grade 1 Skill"
+  },
+  {
+    "product_id": 29358,
+    "rating": 4.8,
+    "amzn_price": 5.99,
+    "amzn_url": "https://www.amazon.com/Creative-Haven-Butterfly-Gardens-Coloring/dp/0486836517",
+    "title": "Butterfly Gardens Coloring Book"
+  },
+  {
+    "product_id": 29321,
+    "rating": 5,
+    "amzn_price": 23.99,
+    "amzn_url": "https://www.amazon.com/Revelation-Products-Heavenly-Treasures-Players/dp/B00PMJEUYQ",
+    "title": "Heavenly Treasures Board Game"
+  },
+  {
+    "product_id": 29273,
+    "rating": 5,
+    "amzn_price": 17.99,
+    "amzn_url": "https://www.amazon.com/LANG-Lord-Shepherd-Calendar-21991002000/dp/B0812NYT4K",
+    "title": "2021 The Lord Is My Shepherd Wall Calendar"
+  },
+  {
+    "product_id": 29147,
+    "rating": 3,
+    "amzn_price": 6.95,
+    "amzn_url": "https://www.amazon.com/P-Graham-Dunn-Distressed-Toothpick/dp/B06WP25S8K",
+    "title": "Thankful, Stick Plaque, Small"
+  },
+  {
+    "product_id": 29107,
+    "rating": 4.6,
+    "amzn_price": 7.57,
+    "amzn_url": "https://www.amazon.com/Skill-Sharpeners-Science-Grade-4/dp/162938156X",
+    "title": "Skill Sharpeners: Science, Grade 4"
+  },
+  {
+    "product_id": 29085,
+    "rating": 4.6,
+    "amzn_price": 2.99,
+    "amzn_url": "https://www.amazon.com/School-Zone-Addition-Subtraction-Cards/dp/0887432735",
+    "title": "Math War Addition & Subtraction Game Cards"
+  },
+  {
+    "product_id": 29062,
+    "rating": 4.9,
+    "amzn_price": 11.95,
+    "amzn_url": "https://www.amazon.com/P-Graham-Dunn-Whitewash-Hanging/dp/B07CQ8VYYM",
+    "title": "Today I Choose Joy Jute Hanging Decor"
+  },
+  {
+    "product_id": 29033,
+    "rating": 4.5,
+    "amzn_price": 6.99,
+    "amzn_url": "https://www.amazon.com/PlayMonster-ATE-Fast-Card-Game/dp/B07NPGS55K",
+    "title": "7 Ate 9"
+  },
+  {
+    "product_id": 29000,
+    "rating": null,
+    "amzn_price": 50.63,
+    "amzn_url": "https://www.amazon.com/Hot-Wheels-Stunt-Garage-Years/dp/B07Y98T1MS",
+    "title": "Hot Wheels City Stunt Garage"
+  },
+  {
+    "product_id": 28993,
+    "rating": 4.8,
+    "amzn_price": 3.99,
+    "amzn_url": "https://www.amazon.com/Telling-Learning-Evan-Moor-Educational-Publishers/dp/1596731966",
+    "title": "The Learning Line: Telling Time"
+  },
+  {
+    "product_id": 28931,
+    "rating": 4.5,
+    "amzn_price": 9.53,
+    "amzn_url": "https://www.amazon.com/Skill-Sharpeners-Grammar-Punctuation-Grade/dp/1629388742",
+    "title": "Skill Sharpeners: Grammar and Punctuation, Grade 6"
+  },
+  {
+    "product_id": 28917,
+    "rating": 4.6,
+    "amzn_price": 12.95,
+    "amzn_url": "https://www.amazon.com/Channies-Cursive-Tracing-Practice-Workbook/dp/B06XRRRY6F",
+    "title": "Channie's Easy Peasy Cursive Workbook Pad"
+  }
+]
