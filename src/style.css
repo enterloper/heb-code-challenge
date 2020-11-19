@@ -68,6 +68,7 @@ header h1 {
 .detail_container {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .item_detail p {
@@ -79,4 +80,27 @@ footer {
   text-align: center;
   border-top: 1px solid lightgray;
   font-size: 10px;
+}
+
+/**** STARS FOR RATINGS DISPLAY *****/
+:root {
+  --star-size: 24px;
+  --star-color: #fff;
+  --star-background: #fc0;
+}
+
+.stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+}
+
+.stars::before {
+  content: '★★★★★';
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
