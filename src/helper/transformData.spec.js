@@ -1,4 +1,9 @@
-const { sortByPriceLowToHigh, sortByPriceHighToLow, sortByRatingLowToHigh, sortByRatingHighToLow } = require("./transformData");
+import transformData, {
+    sortByPriceLowToHigh, 
+    sortByPriceHighToLow,
+    sortByRatingLowToHigh, 
+    sortByRatingHighToLow
+} from './transformData';
 import dummyData from '../../public/items.json';
 
 const simpleTests = {
@@ -87,7 +92,82 @@ describe('sortByRatingLowToHigh', () => {
 });
 
 describe('transformData', () => {
+    const testLowHighSorting = [
+        {
+            arguments: [2, 5, 'priceLowHigh', 100],
+            output: [
+                {
+                    rating: 4.6,
+                    price: 2.99,
+                    title: "Math War Addition & Subtraction Game Cards"
+                },
+                {
+                    rating: 4.8,
+                    price: 3.99,
+                    title: 'The Learning Line: Telling Time'
+                }
+            ],
+            expectedLength: 2
+        },
+        {
+            arguments: [12, 50, 'priceLowHigh', 100],
+            output: [
+                {
+                    rating: 4.6,
+                    price: 12.95,
+                    title: "Channie's Easy Peasy Cursive Workbook Pad"
+                  },
+                  {
+                    rating: 5,
+                    price: 29.7,
+                    title: '2021 She Holds on to Hope For He is Forever Faithful 18-Month Planner'
+                  }
+            ],
+            expectedLength: 5
+        },
+        {
+            arguments: [12, 50, 'priceLowHigh', 3],
+            output: [
+                {
+                    rating: 4.6,
+                    price: 12.95,
+                    title: "Channie's Easy Peasy Cursive Workbook Pad"
+                  },
+                  {
+                    rating: 5,
+                    price: 17.99,
+                    title: '2021 The Lord Is My Shepherd Wall Calendar'
+                  }
+            ],
+            expectedLength: 3
+        }
+    ]
     it('correctly filters, sorts, and slices the data based on passed parameters', () => {
-        console.log({dummyData});
+        testLowHighSorting.forEach(test => {
+            let result = transformData(dummyData, ...test.arguments);
+            // check output matches expected length
+            expect(result).toHaveLength(test.expectedLength);
+            // check ratings of first and last values
+            expect(result[0].rating).toBe(test.output[0].rating);
+            expect(result[result.length - 1].rating).toBe(test.output[1].rating);
+            // check prices of first and last values
+            expect(result[0].amzn_price).toBe(test.output[0].price);
+            expect(result[result.length - 1].amzn_price).toBe(test.output[1].price);
+            // check prices of first and last titles
+            expect(result[0].title).toBe(test.output[0].title);
+            expect(result[result.length - 1].title).toBe(test.output[1].title);
+        });
+    });
+
+    it('limits the items based on passed max price parameters', () => {
+        const result = transformData(dummyData, 1, 3, 'priceLowHigh', 100)
+        expect(result).toHaveLength(1);
+        expect(result[0].amzn_price).toEqual(2.99);
+    });
+
+    it('limits the items based on passed min price parameters', () => {
+        const result = transformData(dummyData, 30, 1000, 'priceLowHigh', 100)
+        expect(result).toHaveLength(1);
+        expect(result[0].amzn_price).toEqual(50.63);
     });
 });
