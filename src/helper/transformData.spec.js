@@ -1,28 +1,12 @@
 const { sortByPriceLowToHigh, sortByPriceHighToLow, sortByRatingLowToHigh, sortByRatingHighToLow } = require("./transformData");
+import dummyData from '../../public/items.json';
 
-const priceTests = {
+const simpleTests = {
     cases: [
-        [{ amzn_price: 1}, { amzn_price: 0 }, 1],
-        [{ amzn_price: 0 }, { amzn_price: 1 }, -1],
-        [{ amzn_price: 1000 }, { amzn_price: 999 }, 1],
-        [{ amzn_price: 9999 }, { amzn_price: 10000 }, -1],
-    ],
-    testPhrases: [
-        {
-            output: -1, words: 'less than'
-        },
-        {
-            output: 1, words: 'more than'
-        }
-    ]
-};
-
-const ratingTests = {
-    cases: [
-        [{ rating: 1}, { rating: 4 }, -1],
-        [{ rating: 4 }, { rating: 1 }, 1],
-        [{ rating: 5 }, { rating: 4.9 }, 1],
-        [{ rating: 3 }, { rating: 3.1 }, -1],
+        [{ amzn_price: 1, rating: 4 }, { amzn_price: 0, rating: 1 }, 1],
+        [{ amzn_price: 0, rating: 1 }, { amzn_price: 1, rating: 4 }, -1],
+        [{ amzn_price: 1000, rating: 5 }, { amzn_price: 999, rating: 4.9 }, 1],
+        [{ amzn_price: 9999, rating: 3 }, { amzn_price: 10000, rating: 3.1 }, -1],
     ],
     testPhrases: [
         {
@@ -35,7 +19,7 @@ const ratingTests = {
 };
 
 describe('sortByPriceLowToHigh', () => {
-    const {cases, testPhrases} = priceTests;
+    const {cases, testPhrases} = simpleTests;
 
     testPhrases.forEach(phrase => {
         let {output, words} = phrase;
@@ -52,7 +36,7 @@ describe('sortByPriceLowToHigh', () => {
 });
 
 describe('sortByPriceHighToLow', () => {
-    const {cases, testPhrases} = priceTests;
+    const {cases, testPhrases} = simpleTests;
 
     testPhrases.forEach(phrase => {
         let {output, words} = phrase;
@@ -69,7 +53,7 @@ describe('sortByPriceHighToLow', () => {
 });
 
 describe('sortByRatingHighToLow', () => {
-    const {cases, testPhrases} = ratingTests;
+    const {cases, testPhrases} = simpleTests;
 
     testPhrases.forEach(phrase => {
         let {output, words} = phrase;
@@ -86,7 +70,7 @@ describe('sortByRatingHighToLow', () => {
 });
 
 describe('sortByRatingLowToHigh', () => {
-    const {cases, testPhrases} = ratingTests;
+    const {cases, testPhrases} = simpleTests;
 
     testPhrases.forEach(phrase => {
         let {output, words} = phrase;
@@ -102,3 +86,8 @@ describe('sortByRatingLowToHigh', () => {
     });
 });
 
+describe('transformData', () => {
+    it('correctly filters, sorts, and slices the data based on passed parameters', () => {
+        console.log({dummyData});
+    });
+});
