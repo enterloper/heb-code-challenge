@@ -4,7 +4,7 @@ The following was a coding challenge I was tasked with for a software developer 
 
 A similar version of this code can be found on [StackBlitz](https://stackblitz.com/edit/heb-code-challenge?file=src/App.js).
 
-> To run in your local dev environment, [Node.js](https://nodejs.org/en/download/) will need to be installed. Once Node is installed following the following commands:
+> To run in your local dev environment, [Node.js](https://nodejs.org/en/download/) will need to be installed. Once Node is installed follow the following commands:
 >   1. In your terminal, run `npm install` to install all dependencies.
 >   2. To run tests, while also in your terminal, run `npm test`
 >   3. To start a development environment, run `npm start` and navigate to `localhost:8080` in any browser.
@@ -27,6 +27,7 @@ The tasks that I will implement next will be the following:
 1. Implement testing through jest
 2. Add statistics that will show the lowest and highest prices as well as the best rating
 3. Make the rating more UI friendly (stars/half-stars)
-4. Make UI mobile friendly
+4. Add links to the amazon products
+5. Make UI mobile friendly
 
 ![HEB CODE CHALLENGE PREVIEW](./public/heb-preview.png)
