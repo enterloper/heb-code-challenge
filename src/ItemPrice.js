@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import {number} from 'prop-types';
 import buildPrice from "./helper/buildPrice";
 
 const ItemPrice = ({ price }) => {
@@ -8,6 +9,10 @@ const ItemPrice = ({ price }) => {
       <p>Price: {displayPrice}</p>
     </div>
   );
+};
+
+ItemPrice.propTypes = {
+  price: number.isRequired
 };
 
 export default ItemPrice;

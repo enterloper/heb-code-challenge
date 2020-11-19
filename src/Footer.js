@@ -4,7 +4,7 @@ const Footer = () => (
   <footer>
     <p>
       This was created for a coding challenge for HEB by{" "}
-      <a href="https://github.com/enterloper" target="_blank">
+      <a href="https://github.com/enterloper" target="_blank" rel="noreferrer">
         Richard Boothe
       </a>
     </p>

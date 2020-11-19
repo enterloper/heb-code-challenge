@@ -1,4 +1,5 @@
 import React from "react";
+import {func, number, oneOfType, shape, string} from 'prop-types';
 import FilterInput from "./FilterInput";
 import SortSelection from "./SortSelection";
 
@@ -38,4 +39,14 @@ const ItemFilter = ({ filterValues, handleFilterChange }) => {
     </div>
   );
 };
+
+ItemFilter.propTypes = {
+  filterValues: shape({
+    itemLimit: oneOfType([string, number]),
+    minPrice: oneOfType([string, number]), 
+    maxPrice: oneOfType([string, number])
+  }),
+  handleFilterChange: func.isRequired
+};
+
 export default ItemFilter;
