@@ -1,14 +1,14 @@
 /**** SORTING FUNCTIONS ****/
-const sortByPriceLowToHigh = (a, b) =>
+export const sortByPriceLowToHigh = (a, b) =>
   a.amzn_price < b.amzn_price ? -1 : a.amzn_price > b.amzn_price ? 1 : 0;
 
-const sortByPriceHighToLow = (a, b) =>
+export const sortByPriceHighToLow = (a, b) =>
   a.amzn_price > b.amzn_price ? -1 : a.amzn_price < b.amzn_price ? 1 : 0;
 
-const sortByRatingLowToHigh = (a, b) =>
+export const sortByRatingLowToHigh = (a, b) =>
   a.rating < b.rating ? -1 : a.rating > b.rating ? 1 : 0;
 
-const sortByRatingHighToLow = (a, b) =>
+export const sortByRatingHighToLow = (a, b) =>
   a.rating < b.rating ? 1 : a.rating > b.rating ? -1 : 0;
 
 const sortingOptions = {
