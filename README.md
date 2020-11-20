@@ -24,11 +24,11 @@ These tasks were completed. However, I felt there was much to be desired before 
     - Rating: Highest to Lowest
 4. Converted the ratings to stars for quick reference for the user
 5. Added links to each item leading to Amazon
+6. Make UI mobile friendly
 
 The tasks that I will implement next will be the following:
 1. Implement testing through jest - (still need to complete component testing)
 2. Add statistics that will show the three lowest or highest prices as well as the three best rated products
-3. Make UI mobile friendly
-4. Implement smooth-scroll for lowest/highest prices and best rating
-5. Rewrite in TypeScript
+3. Implement smooth-scroll for lowest/highest prices and best rating
+4. Rewrite in TypeScript
 ![HEB CODE CHALLENGE PREVIEW](./public/heb-preview.png)
