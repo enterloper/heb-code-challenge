@@ -6,6 +6,7 @@ import SortSelection from "./SortSelection";
 const ItemFilter = ({ filterValues, handleFilterChange, items }) => {
   const { itemLimit, minPrice, maxPrice } = filterValues;
   useEffect(() => {
+    
     console.log('useEffect RAN')
   }
   , [items]);

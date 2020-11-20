@@ -2,10 +2,12 @@ h1,
 h4 {
   font-family: "Avenir Next";
 }
+
+a,
 p,
 label,
 footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 label {
@@ -72,7 +74,7 @@ header h1 {
 }
 
 .item_detail p {
-  margin-bottom: 0;
+  margin: 28px;
 }
 
 footer {
@@ -111,4 +113,36 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/**** AMAZON BUTTON ****/
+/* Credit goes to the designers/UI team at Amazon as I totally ripped this off */
+.amazon_anchor {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(254, 230, 176), rgb(238, 186, 55)) rgb(254, 230, 176);
+  inset: 0px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid rgb(190, 149, 44) rgb(166, 130, 38) rgb(155, 121, 36);
+  border-radius: 3px;
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+  height: 24px;
+  padding: 0px 10px 0px 11px;
+  width: 91px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000;
+  box-shadow: rgba(255, 255, 255, 0.6) 0px 1px 0px inset;
+}
+
+a.amazon_anchor:hover {
+  background: linear-gradient(rgb(254, 222, 151), rgb(236, 178, 31)), rgb(254, 222, 151);
+  border-color: rgb(169, 133, 39) rgb(145, 114, 33) rgb(155, 121, 36);
 }

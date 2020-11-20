@@ -13,10 +13,14 @@ const dummyData = require('../../public/items.json');
     console.log()
     if (!items.length || Object.keys(items[0]).indexOf(value) === -1) return [];
     const output = [];
-    items.forEach(item => {
-        console.log(item);
-    })
- };
+    if (top) {
+        items.forEach(item => {
+            
+        })
+    } else {
 
- console.log(isolateValues(dummyData, 'rating'))
+    }
+ };
+    
+    console.log(isolateValues(dummyData, 'rating'))
 //  export default isolateValues;
