@@ -9,14 +9,16 @@ const sortOptions = [
 ];
 
 const SortSelection = ({ id, handleChange }) => (
-  <label htmlFor={id}>
-    Sort by:
+  <div className="filter_input">
+    <label htmlFor={id}>
+      Sort by:
+    </label>
     <select onChange={handleChange} id={id} name={id}>
       {sortOptions.map(({ label, value }) => (
         <option key={label} value={value}>{label}</option>
       ))}
     </select>
-  </label>
+  </div>
 );
 
 SortSelection.propTypes = {

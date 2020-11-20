@@ -2,8 +2,10 @@ import React from 'react';
 import {string, number, oneOfType, func} from 'prop-types';
 
 const FilterInput = ({ id, label, type, min, max, value, handleChange }) => (
-  <label htmlFor={id}>
-    {label}
+  <div className="filter_input">
+    <label htmlFor={id}>
+      {label}
+    </label>
     <input
       onChange={handleChange}
       id={id}
@@ -13,7 +15,7 @@ const FilterInput = ({ id, label, type, min, max, value, handleChange }) => (
       max={max}
       value={value}
     />
-  </label>
+  </div>
 );
 
 FilterInput.propTypes = {

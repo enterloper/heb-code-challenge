@@ -3,6 +3,7 @@ import { number, oneOfType, string } from'prop-types'
 import ItemPrice from './ItemPrice';
 import ItemRating from './ItemRating';
 import AmazonAnchor from './AmazonAnchor';
+
 const ItemDetails = ({ price, rating, url }) => (
   <div className="detail_container">
     <ItemPrice price={price} />

@@ -22,6 +22,11 @@ header {
   text-align: center;
 }
 
+header img {
+  height: 100;
+  width: 200;
+}
+
 header h1 {
   margin: 0;
   color: #ee2824;
@@ -33,7 +38,7 @@ header h1 {
   max-width: 800px;
 }
 
-#item_filter {
+.item_filter {
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -44,6 +49,25 @@ header h1 {
 .filter_input_wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.filter_input {
+  padding-bottom: 4px;
+}
+
+.filter_input label {
+  padding: 0 0 4px;
+}
+
+.filter_input input {
+  margin: 0;
+  width: 168px;
+  padding: 4px;
+}
+
+.filter_input select {
+  padding: 4px;
+  width: 180px;
 }
 
 .item {
@@ -65,6 +89,7 @@ header h1 {
 .item_title h4 {
   margin: 8px 0;
   padding: 0 4px;
+  color: #fff;
 }
 
 .detail_container {
@@ -116,7 +141,6 @@ footer {
 }
 
 /**** AMAZON BUTTON ****/
-/* Credit goes to the designers/UI team at Amazon as I totally ripped this off */
 .amazon_anchor {
   display: flex;
   flex-shrink: 0;
@@ -146,3 +170,72 @@ a.amazon_anchor:hover {
   background: linear-gradient(rgb(254, 222, 151), rgb(236, 178, 31)), rgb(254, 222, 151);
   border-color: rgb(169, 133, 39) rgb(145, 114, 33) rgb(155, 121, 36);
 }
+
+
+/**** Media Query ****/
+@media only screen and (max-width: 480px) {
+  header img {
+    height: 50;
+    width: 150;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .item_filter {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .filter_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4px;
+  }
+  
+  .filter_input label {
+    padding: 0 0 4px;
+  }
+  
+  .filter_input input {
+    margin: 0;
+  }
+
+  .filter_input select option {
+    padding: 4px;
+  }
+
+  .item_title {
+    margin: 0;
+  }
+
+  .item_title h4 {
+    padding: 0;
+    margin: 4px 0;
+    font-size: 14px;
+  }
+
+  .detail_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item_detail p {
+    margin: 8px 0;
+  }
+
+  .amazon_anchor {
+    margin-top: 8px; 
+  }
+  .detail_container :nth-child(2){
+    order: 3;
+  }
+}
+
+/* @media only screen and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+} */

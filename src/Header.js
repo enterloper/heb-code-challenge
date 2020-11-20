@@ -3,7 +3,7 @@ import Logo from "../public/heb.svg";
 
 const Header = () => (
   <header>
-    <img src={Logo} style={{ height: 100, width: 200 }} alt="website logo" />
+    <img className="heb_logo" src={Logo} alt="website logo" />
     <h1>Code Challenge</h1>
   </header>
 );

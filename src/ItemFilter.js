@@ -11,7 +11,7 @@ const ItemFilter = ({ filterValues, handleFilterChange, items }) => {
   }
   , [items]);
   return (
-    <div id="item_filter">
+    <div className="item_filter">
       <div className="filter_input_wrapper">
         <FilterInput
           label="Number of items:"
