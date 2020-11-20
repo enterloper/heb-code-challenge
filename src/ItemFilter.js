@@ -1,10 +1,14 @@
-import React from "react";
-import {func, number, oneOfType, shape, string} from 'prop-types';
+import React, { useEffect } from "react";
+import {array, func, number, oneOfType, shape, string} from 'prop-types';
 import FilterInput from "./FilterInput";
 import SortSelection from "./SortSelection";
 
-const ItemFilter = ({ filterValues, handleFilterChange }) => {
+const ItemFilter = ({ filterValues, handleFilterChange, items }) => {
   const { itemLimit, minPrice, maxPrice } = filterValues;
+  useEffect(() => {
+    console.log('useEffect RAN')
+  }
+  , [items]);
   return (
     <div id="item_filter">
       <div className="filter_input_wrapper">
@@ -35,7 +39,9 @@ const ItemFilter = ({ filterValues, handleFilterChange }) => {
           value={maxPrice}
         />
       </div>
-      <SortSelection handleChange={handleFilterChange} id="sortby" />
+      <div>
+        <SortSelection handleChange={handleFilterChange} id="sortby" />
+      </div>
     </div>
   );
 };
@@ -46,7 +52,8 @@ ItemFilter.propTypes = {
     minPrice: oneOfType([string, number]), 
     maxPrice: oneOfType([string, number])
   }),
-  handleFilterChange: func.isRequired
+  handleFilterChange: func.isRequired,
+  items: array.isRequired
 };
 
 export default ItemFilter;

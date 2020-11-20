@@ -1,6 +1,6 @@
 h1,
 h4 {
-  font-family: Lato;
+  font-family: "Avenir Next";
 }
 p,
 label,
@@ -83,8 +83,15 @@ footer {
 }
 
 /**** STARS FOR RATINGS DISPLAY *****/
+.item_rating p {
+  margin: 0;
+  padding-left: 2px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-family: "Avenir Next";
+}
 :root {
-  --star-size: 24px;
+  --star-size: 20px;
   --star-color: #fff;
   --star-background: #fc0;
 }

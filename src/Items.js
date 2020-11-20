@@ -8,6 +8,7 @@ const Items = ({ filterValues, handleInputChange, items }) => (
     <ItemFilter
       filterValues={filterValues}
       handleFilterChange={handleInputChange}
+      items={items}
     />
     {items.map(item => (
       <AmazonItem key={item.product_id} item={item} />

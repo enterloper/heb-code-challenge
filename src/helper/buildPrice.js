@@ -1,3 +1,10 @@
+/**
+ * Returns a string formatted for display purposes
+ *
+ * @param {number} price value pulled from original item object
+ * @return {string} string of the original numeric price in format $0.00
+ */
+
 const buildPrice = price => {
   const priceArray = price.toString().split(".");
 

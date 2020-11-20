@@ -18,6 +18,17 @@ const sortingOptions = {
   ratingHighLow: sortByRatingHighToLow
 };
 
+/**
+ * Returns objects from an array of objects 
+ * that meet the criteria based on parameters.
+ *
+ * @param {array} data array of items that contain the population of objects.
+ * @param {string} minprice minimum price of items used for filtering items
+ * @param {string} maxprice maximum price of items used for filtering items
+ * @param {string} orderPreference determines how to order the items
+ * @param {number} numberOfItems limit of returned items
+ * @return {array} array of objects that meet the criteria of the arguments
+ */
 const transformData = (
   data = [],
   minprice,
